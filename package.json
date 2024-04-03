@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "tsx ./db/migrate.ts",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:push": "drizzle-kit push:pg"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.6",
     "pg": "^8.11.5",
-    "postgres": "^3.4.4"
+    "postgres": "^3.4.4",
+    "typescript": "^5.4.3"
   }
 }
